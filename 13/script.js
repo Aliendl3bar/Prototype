@@ -1,70 +1,89 @@
 const questions = [
     {
-        text: "git init is used to ...",
+        text: "Concevoir avec UX/UI",
         options: [
-            "creat a local repository",
-            "creat a remote repository",
-            "creat a new branch",
-            "creat a new file"
+            "C1",
+            "C2",
+            "C3",
+            "C4"
         ],
         answer: "1"
     },
     {
-        text: "git push is used to ...",
+        text: "Structurer le HTML",
         options: [
-            "upload local repository content to a remote repository",
-            "download remote repository content to a local repository"
+            "C1",
+            "C2",
+            "C3",
+            "C4"
         ],
-        answer: "1"
+        answer: "2"
     },
     {
-        text: "collaborators can ...",
+        text: "JavaScript : Premiers pas",
         options: [
-            "make changes to the repository",
-            "clone the repository",
-            "create a new branch",
-            "all of the above"
-        ],
-        answer: "4"
-    },
-    {
-        text: "let is used to ...",
-        options: [
-            "declare a variable that can change",
-            "declare a variable that cannot change"
-        ],
-        answer: "1"
-    },
-    {
-        text: "return is used to ...",
-        options: [
-            "exit a loop",
-            "exit a conditional statement",
-            "exit a function and return a value"
+            "C1",
+            "C2",
+            "C3",
+            "C4"
         ],
         answer: "3"
     },
     {
-        text: "if is used to ...",
+        text: " Comprendre le maquettage",
         options: [
-            "execute a block of code if a specified condition is false",
-            "execute a block of code if a specified condition is true"
+            "C1",
+            "C2",
+            "C3",
+            "C4"
+        ],
+        answer: "1"
+    },
+    {
+        text: "Styliser avec CSS",
+        options: [
+            "C1",
+            "C2",
+            "C3",
+            "C4"
         ],
         answer: "2"
     },
     {
-        text: "loops are used to ...",
+        text: "JavaScript : Aller plus loin",
         options: [
-            "store the code for later use",
-            "repeat a block of code multiple times"
+            "C1",
+            "C2",
+            "C3",
+            "C4"
         ],
-        answer: "2"
+        answer: "3"
+    },
+    {
+        text: "Git & GitHub",
+        options: [
+            "T1",
+            "T2",
+            "T3",
+            "T4"
+        ],
+        answer: "3"
+    },
+    {
+        text: "Comprendre la démarche pédagogique à Solicode",
+        options: [
+            "T1",
+            "T2",
+            "T3",
+            "T4"
+        ],
+        answer: "1"
     }
 ];
 
 let total = 0;
 
-questions.forEach((q, i) => {
+questions.forEach((q) => {
     let promptText = `${q.text}\n`;
     q.options.forEach((opt, idx) => {
         promptText += `${idx + 1}. ${opt}\n`;
@@ -79,4 +98,4 @@ questions.forEach((q, i) => {
     }
 });
 
-prompt(`You got ${total} out of ${questions.length} correct.`);
+promptText(`You got ${total} out of ${questions.length} correct.`);

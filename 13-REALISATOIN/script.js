@@ -91,11 +91,11 @@ questions.forEach((q) => {
     promptText += "Enter your answer (number):";
     let userAnswer = prompt(promptText);
     if (userAnswer === q.answer) {
-        console.log("Correct!");
+        alert("Correct!");
         total++;
     } else {
-        console.log(`Incorrect. The correct answer is ${q.answer}.`);
+        alert(`Incorrect. The correct answer is ${q.answer}.`);
     }
 });
 
-promptText(`You got ${total} out of ${questions.length} correct.`);
+alert(`You got ${total} out of ${questions.length} correct.`);
